@@ -1,6 +1,18 @@
-# MERN Notas
+# MERN Academy
 
-Proyecto MERN simple para compartir con compañeros. Permite crear, listar y eliminar notas.
+Proyecto MERN para compartir con compañeros. Incluye notas colaborativas y un módulo de aprendizaje de algoritmos y estructuras de datos.
+
+## Funcionalidades
+
+### Notas
+Crear, listar y eliminar notas compartidas entre compañeros.
+
+### Algoritmos y Estructuras de Datos
+Módulo de aprendizaje con 12 lecciones precargadas:
+- **Estructuras:** Arreglos, Listas enlazadas, Pilas, Colas, Árboles binarios, Tablas hash
+- **Algoritmos:** Búsqueda lineal/binaria, Bubble sort, Merge sort, BFS, DFS
+
+Cada lección incluye teoría, ejemplo en JavaScript, complejidad y ejercicio práctico.
 
 ## Stack
 
@@ -57,6 +69,8 @@ cd frontend && npm run dev
 | GET    | `/api/notas`    | Listar notas     |
 | POST   | `/api/notas`    | Crear nota       |
 | DELETE | `/api/notas/:id`| Eliminar nota    |
+| GET    | `/api/lecciones`| Listar lecciones (filtros: `?categoria=estructura&dificultad=basico`) |
+| GET    | `/api/lecciones/:id` | Ver lección |
 
 ### Ejemplo POST
 
@@ -73,11 +87,17 @@ cd frontend && npm run dev
 ```
 proyectoMERN/
 ├── backend/
-│   ├── models/Note.js    # Modelo Mongoose
-│   ├── routes/notes.js   # Rutas CRUD
-│   └── server.js         # Punto de entrada
+│   ├── models/Note.js       # Modelo de notas
+│   ├── models/Leccion.js    # Modelo de lecciones
+│   ├── data/leccionesSeed.js # Contenido educativo
+│   ├── routes/notes.js
+│   ├── routes/lecciones.js
+│   └── server.js
 ├── frontend/
-│   └── src/App.jsx       # Componente principal
+│   └── src/
+│       ├── pages/Notas.jsx
+│       ├── pages/Algoritmos.jsx
+│       └── pages/LeccionDetalle.jsx
 ├── docker-compose.yml    # MongoDB en Docker
 └── README.md
 ```
