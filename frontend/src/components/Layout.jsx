@@ -12,13 +12,16 @@ export default function Layout() {
     <div className="app">
       <header className="header">
         <h1>MERN Academy</h1>
-        <p>Notas compartidas y aprendizaje de algoritmos</p>
+        <p>Notas, algoritmos y taller Oracle 26ai</p>
         <nav className="nav">
           <Link to="/" className={`nav-link${esActivo('/') ? ' activo' : ''}`}>
             Notas
           </Link>
           <Link to="/algoritmos" className={`nav-link${esActivo('/algoritmos') ? ' activo' : ''}`}>
-            Algoritmos y Estructuras
+            Algoritmos
+          </Link>
+          <Link to="/oracle" className={`nav-link${esActivo('/oracle') ? ' activo' : ''}`}>
+            Oracle 26ai
           </Link>
         </nav>
       </header>

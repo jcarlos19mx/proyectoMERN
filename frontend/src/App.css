@@ -350,3 +350,133 @@
   color: #555;
   line-height: 1.5;
 }
+
+/* Oracle 26ai */
+.oracle-intro h2 {
+  color: #c74634;
+}
+
+.oracle-stats {
+  color: #c74634;
+}
+
+.badge-oracle {
+  background: #fde8e4;
+  color: #c74634;
+}
+
+.badge-horas {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.oracle-card:hover h3 {
+  color: #c74634;
+}
+
+.oracle-horas {
+  color: #c74634 !important;
+}
+
+.temario-grid h3 {
+  margin: 0 0 1rem;
+  color: #c74634;
+  font-size: 1rem;
+}
+
+.modulos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modulo-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #f0e0dc;
+  border-radius: 8px;
+  background: #fffaf9;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.modulo-chip:hover,
+.modulo-chip.activo {
+  border-color: #c74634;
+  background: #fde8e4;
+}
+
+.modulo-num {
+  background: #c74634;
+  color: white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.modulo-nombre {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.modulo-count {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.oracle-modulo-nombre {
+  margin: 0.5rem 0 0;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.oracle-contexto {
+  border-left-color: #c74634;
+  background: #fffaf9;
+}
+
+.seccion-pista,
+.seccion-solucion {
+  margin-top: 1.5rem;
+}
+
+.seccion-pista p {
+  margin: 0.75rem 0 0;
+  padding: 1rem;
+  background: #f0f7ff;
+  border-radius: 8px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.seccion-solucion pre {
+  margin-top: 0.75rem;
+  background: #1a1a2e;
+  color: #a8e6cf;
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.btn-secondary {
+  background: #e8e8f0;
+  color: #444;
+}
+
+.btn-oracle {
+  background: linear-gradient(135deg, #c74634, #a83224);
+  color: white;
+}

@@ -14,6 +14,20 @@ Módulo de aprendizaje con 12 lecciones precargadas:
 
 Cada lección incluye teoría, ejemplo en JavaScript, complejidad y ejercicio práctico.
 
+### Taller de Bases de Datos — Oracle 26ai (64 horas)
+Módulo con **25 ejercicios** alineados al temario oficial:
+
+| Módulo | Tema | Ejercicios |
+|--------|------|------------|
+| 1 | DDL — Definición de datos | 4 |
+| 2 | DML — Manipulación de datos | 7 |
+| 3 | Control de acceso | 4 |
+| 4 | Concurrencia | 5 |
+| 5 | SQL Procedural | 3 |
+| 6 | Conectividad (ODBC, JDBC, Node.js) | 2 |
+
+Cada ejercicio incluye enunciado, script base, pista y solución SQL para practicar en SQL Developer.
+
 ## Stack
 
 - **M**ongoDB — Base de datos
@@ -71,6 +85,9 @@ cd frontend && npm run dev
 | DELETE | `/api/notas/:id`| Eliminar nota    |
 | GET    | `/api/lecciones`| Listar lecciones (filtros: `?categoria=estructura&dificultad=basico`) |
 | GET    | `/api/lecciones/:id` | Ver lección |
+| GET    | `/api/oracle/temario` | Temario del taller (64 h) |
+| GET    | `/api/oracle` | Listar ejercicios (`?modulo=2&dificultad=intermedio`) |
+| GET    | `/api/oracle/:id` | Ver ejercicio Oracle |
 
 ### Ejemplo POST
 
@@ -88,16 +105,20 @@ cd frontend && npm run dev
 proyectoMERN/
 ├── backend/
 │   ├── models/Note.js       # Modelo de notas
-│   ├── models/Leccion.js    # Modelo de lecciones
-│   ├── data/leccionesSeed.js # Contenido educativo
-│   ├── routes/notes.js
+│   ├── models/Leccion.js
+│   ├── models/EjercicioOracle.js
+│   ├── data/leccionesSeed.js
+│   ├── data/oracleSeed.js
 │   ├── routes/lecciones.js
+│   ├── routes/oracle.js
 │   └── server.js
 ├── frontend/
 │   └── src/
 │       ├── pages/Notas.jsx
 │       ├── pages/Algoritmos.jsx
-│       └── pages/LeccionDetalle.jsx
+│       ├── pages/LeccionDetalle.jsx
+│       ├── pages/Oracle.jsx
+│       └── pages/OracleDetalle.jsx
 ├── docker-compose.yml    # MongoDB en Docker
 └── README.md
 ```
