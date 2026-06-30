@@ -5,7 +5,10 @@
   "scripts": {
     "install:all": "npm install --prefix backend && npm install --prefix frontend",
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
-    "mongo": "docker compose up -d"
+    "start": "docker compose up --build -d",
+    "stop": "docker compose down",
+    "logs": "docker compose logs -f",
+    "mongo": "docker compose up -d mongodb"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
